@@ -1,0 +1,24 @@
+#
+# Please do not make any changes in this file. If you want to customize
+# your zsh environment, make all personal modifications in a file
+# named "$HOME/.personal.zprofile". This file is "sourced" after
+# executing the global.zprofile startup script.
+#
+
+
+STARTUP=/app
+
+file=$STARTUP/.zshrc
+
+if test -r $file ; then
+  . $file
+fi
+
+STARTUP=/app
+
+file=$STARTUP/.zprofile
+
+if test -r $file ; then
+  . $file
+fi
+

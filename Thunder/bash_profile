@@ -1,0 +1,15 @@
+#
+# Please do not make any changes in this file. If you want to customize
+# your bash environment, make all personal modifications in a file
+# named "$HOME/.personal.bash_profile". This file is "sourced" after
+# executing the global.bash_profile startup script.
+#
+
+STARTUP=/app
+
+file=$STARTUP/.bash_profile
+
+if test -r $file ; then
+  . $file
+fi
+

@@ -1,0 +1,1000 @@
+cd cantherm/
+ls
+egrep cantera *.py
+cd ../../../../
+ls
+cd ../../../
+cd repos/RMG-Py/
+ls
+cd external/
+ls
+cd ../
+ls
+python setup.py install --help
+python setup.py install
+cd ~ccm/modules/pkgs/python/gnu/
+vi 2.7.15 
+module unload python
+module load python/gnu/2.7.15
+ipython
+cd ~ccm/opt/python/
+cd gnu/2.7.15/lib/python2.7/site-packages/
+cd rmgpy/
+ls
+cd rmg/
+ls
+vi main.py
+cd ~ccm/opt/python/repos/RMG-Py/
+ls
+cd rmgpy/
+ls
+cd rmg/
+ls
+vi main.py
+cd ../../../
+cd ../
+cd ../dependencies/
+ls
+all_shr scons
+cd ~ccm/opt/python/repos/RMG-py
+ls
+cd ~ccm/opt/python/repos/RMG-Py/
+ls
+echo $PYTHONPATH
+ls /app/ccm/opt/python/repos/rdkit
+export PYTHONPATH=$PYTHONPATH:/app/ccm/opt/python/repos/RMG-Py
+echo $PYTHONPATH
+ipython
+ls
+cd ~ccm/opt/python/gnu/
+ls
+cd 2.7.15/
+all_shr .
+module show python/gnu/2.7.15
+vi ~ccm/modules/pkgs/python/gnu/2.7.15 
+ls
+lpad get_fws
+lpad get_fws -s FIZZLED
+cd ~ccm/opt/python/gnu/2.7.15/lib/python2.7/site-packages/
+ls
+find . -iname "*database*" -print
+vi ./RMG_database-2.2.0-py2.7.egg-info
+cd rmgpy
+ls
+cd ../
+rm -rf rmgpy*
+ls RM*
+rm -rf RMG_*
+cd ../../../../../
+cd repos/
+ls
+cd RMG-database/
+module unload python
+module list
+module load python/gnu/2.7.15
+ls
+find . -iname '*__init__*" -print
+find . -iname "*__init__*" -print
+cd ~ccm/opt/python/repos/
+ls
+cd RMG-database/
+ls
+cd ../../
+ls
+ipython
+cd repos/RMG-Py/
+ls
+module unload python/gnu/2.7.15
+module load python/gnu/2.7.15
+rmg.py examples/rmg/minimal/input.py 
+vi /app/ccm/opt/python/repos/RMG-Py/rmgpy/rmg/main.py
+rmg.py examples/rmg/minimal/input.py 
+vi /app/ccm/opt/python/repos/RMG-Py/rmgpy/rmg/main.py
+rmg.py examples/rmg/minimal/input.py 
+rmg.py -m scoop examples/rmg/minimal/input.py 
+module show python/gnu/2.7.15
+cd $WRK
+ls
+cd BGW/PROD/NEW_WF_CHANGES/
+ls
+cd ~ccm/modules/pkgs/
+ls
+ipython
+cd python/gnu/
+vi 2.7.15 
+cd ~ccm/opt/python/repos/RMG-Py/
+ls
+rmg.py examples/rmg/minimal_dynamics/input.py 
+ls
+cd examples/
+ls
+cd rmg
+ls
+cd minimal_surface
+ls
+rmg.py ./input.py 
+cd ../../../
+ls
+make test
+cd ~ccm/opt/python/gnu/2.7.15
+ls
+nohup all_shr . &
+jobs
+ls
+cd $WRK
+ls
+mkdir RMG-py
+cd RMG-py
+ls
+vi input.hanchak
+python -m scoop -n 4 --hosts thunder06 -v /app/ccm/opt/python/gnu/2.7.15/bin/rmg.py ./input.hanchak 
+cd ~ccm/opt/python/repos/RMG-Py/
+ls
+make test
+nohup make test 2>&1 | tee log.test &
+nohup make eg1 2>&1 | tee log.eg1 &
+nohup make eg1 2>&1 | tee log.eg2 &
+jobs
+kill %2
+pip search scoop
+jobs
+ls
+nohup make eg2 2>&1 | tee log.eg2 &
+jobs
+which rmg.py
+python -m scoop -n 4 /app/ccm/opt/python/gnu/2.7.15/bin/rmg.py examples/rmg/minimal/input.py 
+bash -c hostname
+python -m scoop -n 4 -v /app/ccm/opt/python/gnu/2.7.15/bin/rmg.py examples/rmg/minimal/input.py 
+python -m scoop -n 4 --hosts thunder09 -v /app/ccm/opt/python/gnu/2.7.15/bin/rmg.py examples/rmg/minimal/input.py 
+vi /app/ccm/opt/python/gnu/2.7.15/lib/python2.7/site-packages/scoop/launch/__init__.py
+pip install -U scoop
+vi /app/ccm/opt/python/gnu/2.7.15/lib/python2.7/site-packages/scoop/launch/__init__.py
+python -m scoop -n 4 --hosts thunder09 -v /app/ccm/opt/python/gnu/2.7.15/bin/rmg.py examples/rmg/minimal/input.py 
+python -m scoop -n 4 --hosts thunder09 -v /app/ccm/opt/python/gnu/2.7.15/bin/rmg.py examples/rmg/minimal_dynamics/input.py 
+all_shr ../RMG-*
+jobs
+cd /workspace/dec014/RMG-py/
+ls
+mkdir ethane
+cd ethane/
+ls
+vi input.py
+nohup all_shr ~ccm/opt/dependencies
+bg
+jobs
+python -m scoop -n 4 --hosts thunder09 -v /app/ccm/opt/python/gnu/2.7.15/bin/rmg.py ./input.py 
+cd $WRK
+ls
+cd RMG-py/
+ls
+nohup python -m scoop -n 4 --hosts thunder07 -v /app/ccm/opt/python/gnu/2.7.15/bin/rmg.py ./input.py 2>&1 | tee log.out &
+nohup python -m scoop -n 4 --hosts thunder07 -v /app/ccm/opt/python/gnu/2.7.15/bin/rmg.py ./input.hanchak 2>&1 | tee log.out &
+ls
+nohup python -m scoop -n 4 --hosts thunder07 -v /app/ccm/opt/python/gnu/2.7.15/bin/rmg.py ./input.hanchak 2>&1 | tee log.out &
+echo $?
+git branch
+ls
+la
+cd ~ccm/opt/python/repos/RMG-database/
+ls
+git tag -l
+git branch
+git checkout -b v2.2.0 2.2.0
+git branch
+all_shr .
+cd ../RMG-Py/
+ls
+nohup all_shr . &
+git branch
+cd examples/rmg/minimal/
+ls
+nohup python -m scoop -n 4 --hosts thunder07 -v /app/ccm/opt/python/gnu/2.7.15/bin/rmg.py ./input.py 2>&1 | tee log.out &
+echo $?
+git branch
+cd ../../../../
+ls
+cd RMG-database/
+ls
+all_shr .
+lpad get_fws -d more -s FIZZLED
+cd /workspace/dec014/RMG-py/ethane/
+ls
+nohup python -m scoop -n 4 --hosts thunder03 -v /app/ccm/opt/python/gnu/2.7.15/bin/rmg.py ./input.py 2>&1 | tee log.out & 
+module avail mopac
+vi ~ccm/modules/pkgs/python/gnu/2.7.15 
+ls
+module avail mopac
+cd ~ccm/opt/python/repos/RMG-Py/
+ls
+la
+git branch
+git tag -l
+git checkout -b v2.2.1 2.2.1
+git reset --hard
+git checkout -b v2.2.0 2.2.0
+git branch
+vi rmgpy/rmg/main.py
+cd ../RMG-database/
+ls
+git branch
+git tag -l
+cd ../RMG-Py/
+git tag -l
+git branch
+all_shr .
+cd /workspace/dec014/BGW/PROD/NEW_WF_CHANGES/
+ls
+module avail openbabel
+module list
+cd $WRK
+cd RMG-py/
+ls
+cd ethane/
+ls
+nohup python -m scoop -n 4 --hosts thunder11 -v /app/ccm/opt/python/gnu/2.7.15/bin/rmg.py ./input.py 2>&1 | tee log.out &
+echo $?
+nohup python -m scoop -n 4 --hosts thunder11 -v /app/ccm/opt/python/gnu/2.7.15/bin/rmg.py ./input.py 2>&1 | tee log.out &
+cd ~ccm/opt/python/repos/RMG-Py/
+ls
+cd examples/rmg/minimal/
+ls
+nohup python -m scoop -n 1 --hosts thunder11 -v /app/ccm/opt/python/gnu/2.7.15/bin/rmg.py ./input.py 2>&1 | tee log.out &
+nohup all_shr . &
+echo $?
+d
+echo $?
+echo $LD_LIBRARY_PATH | egrep babel
+module list
+module unload openbabel/gnu/2.4.1 
+module show openbabel/gnu/2.4.1 
+cd ~ccm/opt/
+ls
+all_shr openbabel
+module list
+module load openbabel/gnu/2.4.1 
+echo $LD_LIBRARY_PATH | egrep babel
+cd ~ccm/modules/pkgs/openbabel/
+ls
+cd gnu/
+ls
+vi 2.4.1 
+cd ~/.repos/source_2016/fireworks/
+ls
+cd fireworks/core
+vi launchpad.py
+which launchpad
+cd
+ls ~/.fireworks
+ls ~/.fireworks_talon/
+lpad get_fws
+cat ~/.fireworks_talon/my_launchpad.yaml 
+show_queues
+cd ~/.repos/source_2016/MatData/
+ls
+cd WFlows/
+ls
+git pull
+vi WFlowDbg2.py 
+vi absorbance_wflows.py
+./WFlowDbg2.py 
+vi WFlowDbg2.py 
+cat ~/bgw_db.yaml 
+./WFlowDbg2.py 
+ls ~/.fireworks
+vi ~/bgw_db.yaml 
+./WFlowDbg2.py 
+vi ~/bgw_db.yaml 
+./WFlowDbg2.py 
+ls
+lpad get_fws
+cat ~/.fireworks/my_launchpad.yaml
+ls
+cat ~/.fireworks/my_launchpad.yaml
+cat ~/bgw_db.yaml
+./WFlowDbg2.py 
+ls
+lpad add BN_dbg_wflow_18975062.yaml C_dbg_wflow_18975049.yaml GaAs_dbg_wflow_18974828.yaml GaP_dbg_wflow_18974928.yaml GaSb_dbg_wflow_18974541.yaml Ge_dbg_wflow_18975016.yaml SiC_dbg_wflow_18975036.yaml SiC_dbg_wflow_18974793.yaml InAs_dbg_wflow_18974977.yaml InP_dbg_wflow_18974865.yaml InSb_dbg_wflow_18974959.yaml LiF_dbg_wflow_18974810.yaml MgO_dbg_wflow_18974999.yaml 
+cd /workspace/dec014/BGW/PROD/
+ls
+cd WFLOWDBG2/
+ls
+head fwdb_1533739413.log
+tail fwdb_1533739413.log
+./WFlowDbg2.py 
+ls
+cd ~/.repos/source_2016/MatData/WFlows
+cp BN_dbg_wflow_18975062.yaml C_dbg_wflow_18975049.yaml GaAs_dbg_wflow_18974828.yaml GaP_dbg_wflow_18974928.yaml GaSb_dbg_wflow_18974541.yaml Ge_dbg_wflow_18975016.yaml SiC_dbg_wflow_18975036.yaml SiC_dbg_wflow_18974793.yaml InAs_dbg_wflow_18974977.yaml InP_dbg_wflow_18974865.yaml InSb_dbg_wflow_18974959.yaml LiF_dbg_wflow_18974810.yaml MgO_dbg_wflow_18974999.yaml /workspace/dec014/BGW/PROD/WFLOWDBG2
+cd /workspace/dec014/BGW/PROD/WFLOWDBG2
+ls
+egrep kpt BN_dbg_wflow_18975062.yaml 
+egrep kpoint BN_dbg_wflow_18975062.yaml 
+egrep 10 BN_dbg_wflow_18975062.yaml 
+sed '/- 10/- 9/' BN_dbg_wflow_18975062.yaml 
+sed 's/- 10/- 9/' BN_dbg_wflow_18975062.yaml 
+sed 's/- 10/- 9/' BN_dbg_wflow_18975062.yaml | sed 's/- 12/- 13/' | more
+for i in *.yaml; do sed 's/- 10/- 9/' BN_dbg_wflow_18975062.yaml | sed 's/- 12/- 13/' | more; done
+for i in *.yaml; do sed 's/- 10/- 9/' $i | sed 's/- 12/- 13/'; done
+for i in *.yaml; do sed 's/- 10/- 9/' $i | sed 's/- 12/- 13/' | more ; done
+ls
+sed 's/- 10/- 9/' BN_dbg_wflow_18975062.yaml | sed 's/- 12/- 13/' | lpad add
+lpad add --help
+mkdir WorkFlowYAMLs
+mv *yaml WorkFlowYAMLs
+ls
+cd WorkFlowYAMLs/
+ls
+mkdir new
+for i in *.yaml; do sed 's/- 10/- 9/' $i | sed 's/- 12/- 13/' > new/$i ; done
+cd new
+ls
+vi BN_dbg_wflow_18975062.yaml 
+cd ../
+ls
+lpad add new/
+man find
+find new/ -iname "*yaml" -print
+find new/ -iname "*yaml" -print -exec lpad add {} +
+ls
+for i in *.yaml; do sed 's/- 10/- 8/' $i | sed 's/- 12/- 10/' > new/$i ; done
+find new/ -iname "*yaml" -print -exec lpad add {} +
+for i in *.yaml; do sed 's/- 12/- 14/' $i | sed 's/- 10/- 12/' > new/$i ; done
+vi new/BN_dbg_wflow_18975062.yaml 
+find new/ -iname "*yaml" -print -exec lpad add {} +
+for i in *.yaml; do sed 's/- 12/- 9/' $i | sed 's/- 10/- 7/' > new/$i ; done
+find new/ -iname "*yaml" -print -exec lpad add {} +
+q
+lpad get_fws -s FIZZLED
+q
+cd ../
+ls
+tail fwdb_1533739413.log
+db.yaml 
+cd ~/.repos/source_2016/MatData
+vi bgw_db.yaml 
+vi reports.py 
+vi ~bgw_db
+vi reports.py 
+cd WFlows/
+ls
+./WFlowDbg2.py 
+:q
+lpad get_fws -d all -i 294
+lpad get_fws -d all -i 378
+
+q
+cd /workspace/dec014/BGW/PROD/WFLOWDBG2/
+ls
+tail fwdb_1533739413.log
+q
+ls
+tail -n 40 fwdb_1533739413.log
+lpad get_fws --help
+lpad get_fws
+q
+lpad get_fws --help
+lpad get_fws -s RESERVED
+q
+ls
+vi fwdb_launcher.sh
+q
+lpad get_fws -s RESERVED
+lpad get_fws -s RESERVED -c
+lpad --help
+lpad get_fws -h
+lpad get_fws -d count
+lpad get_fws -d reservations
+ls
+lpad get_fws -s RESERVED
+q
+lpad get_fws -s RUNNING --help
+lpad get_fws -s RUNNING -m 1 -d reservations
+lpad get_fws -s RESERVED -m 1 -d reservations
+cd /p/work1/workspace/dec014/BGW/PROD/WFLOWDBG2/block_2018-07-25-18-15-19-234901/launcher_2018-08-08-19-45-33-737594
+ls
+cat OUT.sig 
+ls
+vi bgw.log 
+cd ../../
+ls
+q
+ls
+vi fwdb_launcher.sh
+ls
+q
+ls
+q
+cat *.sh
+cd /workspace/dec014/BGW/PROD/
+ls
+cd WFLOWDBG2/
+ls
+q
+lpad get_fws -s FIZZLED
+lpad get_fws -s FIZZLED -d count
+ls
+q
+lpad get_fws -s FIZZLED
+tail fwdb_1533826152.log
+tail fwdb_1533826152.log -n 50
+tail fwdb_1533826152.log -n 100
+tail fwdb_1533826152.log -n 100 | egrep error
+lpad get_fws -d all -i 159
+cd /p/work1/workspace/dec014/BGW/PROD/WFLOWDBG2/block_2018-07-25-18-15-19-234901/launcher_
+cd /p/work1/workspace/dec014/BGW/PROD/WFLOWDBG2/block_2018-07-25-18-15-19-234901/launcher_2018-07-25-18-32-36-384114
+ls
+vi OUT.eps 
+less OUT.eps
+cat *inp
+cd /p/work1/workspace/dec014/BGW/PROD/WFLOWDBG2/block_2018-07-25-18-15-19-234901/launcher_2018-08-09-09-38-49-450420
+ls
+less OUT.abs 
+cat OUT.abs 
+cat custodian.json 
+vi bgw.log 
+lpad update_fws -i 351 -u '{"_queueadapter.walltime": "24:00:00"}'
+lpad update_fws  -u '{"_queueadapter.walltime": "24:00:00"}' -i 153
+lpad update_fws  -u '{"_queueadapter.walltime": "24:00:00"}' -i 231
+lpad update_fws -i 159 -u '{"_queueadapter.walltime": "24:00:00"}'
+lpad get_fws -d all -i 159
+lpad get_fws -d all -i 531
+lpad get_fws -s FIZZLED
+lpad get_fws -s FIZZLED > fizz.log
+vi fizz.log
+lpad get_fws -s FIZZLED -d more > fizz.log
+vi fizz.log
+less fizz.log
+lpad get_fws -d all -i 267
+lpad update_fws -i 267 -u '{"_queueadapter.walltime": "24:00:00"}'
+less fizz
+less fizz.log 
+cd .repos/source_2016/pymatgen/pymatgen/io/bgw/
+ls
+cd ~/.repos/source_2016/MatData/WFlows/
+git pull
+vi ~/.fireworks/my_qadapter.yaml
+cat ~/.fireworks_qe_288dbg/my_qadapter.yaml
+ls
+vi WFlowDbg2.py 
+vi absorbance_wflows.py
+vi WFlowDbg2.py 
+ls
+cd /workspace/dec014/BGW/PROD/WFLOWDBG2/
+ls
+tail -n 100 fwdb_1533826152.log
+q
+tail -n 100 fwdb_1533826152.log
+lpad get_fws -d all -i 351
+tail -n 100 fwdb_1533826152.log
+q
+tail -n 100 fwdb_1533826152.log
+tail -n 100 fwdb_1533826152.log -f
+q
+lpad get_fws -d count
+lpad get_fws -s COMPLETED -d count
+tail -n 100 fwdb_1533826152.log -f fwdb_1533826152.log -n 100
+lpad get_fws -d all -i 153
+tail -n 100 fwdb_1533826152.log
+q
+ls
+vi *.sh
+vi ~/.repos/source_2016/MatData/WFlows/WFlowDbg2.py 
+vi ~/.repos/source_2016/MatData/WFlows/absorbance_wflows.py
+q
+ls
+cat *sh
+:q
+lpad get_fws --help
+ls ~/
+ls
+tail fwdb_1533826152.log -n 100
+q
+ls
+cd /workspace/dec014/BGW/PROD/WFLOWDBG2/
+ls
+tail -n 100 fwdb_1533826152.log
+lpad update_fws  -u '{"_queueadapter.walltime": "24:00:00"}' -i 387
+q
+ls
+tail -n 100 fwdb_1533826152.log -f 
+lpad update_fws  -u '{"_queueadapter.walltime": "24:00:00"}' -i 189
+tail -n 100 fwdb_1533826152.log -f 
+lpad update_fws  -u '{"_queueadapter.walltime": "48:00:00"}' -i 207
+tail -n 100 fwdb_1533826152.log -f 
+q
+cd /workspace/dec014/BGW/PROD/WFLOWDBG2/
+ls
+tail -n 100 fwdb_1533913123.log
+lpad update_fws  -u '{"_queueadapter.walltime": "48:00:00"}' -i 435
+lpad get_fws -d count -s COMPLETED
+ls
+q
+lpad --help
+lpad get_fws --help
+lpad get_qids
+lpad get_qids -i 435
+lpad get_qids --help
+lpad get_fws -i 435
+lpad update_fws  -u '{"_queueadapter.walltime": "48:00:00"}' -i 435
+tail -n 100 fwdb_1533913123.log -f
+show_queues
+ls
+cd ~tmp
+cd ~/.repos/source_2016/MatData/
+ls
+git status
+show_queues
+git pull
+git remote -v
+git pull
+la
+vi .gitignore
+git status
+ls
+vi user_rpt.py
+cd
+la
+ls
+vi .vimrc
+git --version
+which git
+ls
+show_queues
+ls
+cd .repos/source_2016/
+ls
+cd tmp
+ls
+cd KP_C06F08/
+ls
+cd block_2017-06-08-17-24-50-119112/
+ls
+la
+ls -R 
+man ls
+ls -aRd
+ls
+show_storage
+show_storage -h
+ls
+cd launcher_2017-06-08-18-17-43-098708
+ls
+vi bgw.log 
+ls
+cd ../
+ls
+cd launcher_2017-06-08-17-24-50-590804
+ls
+cd ES
+ls
+cd ESPRESSO/
+ls
+cd wfn
+ls
+cd ../../
+ls
+cd ../
+ls
+cd launcher_2017-06-08-17-37-17-237210
+ls
+cd ../
+ls
+ls launcher_2017-06-08-18-03-59-660942
+ls
+cat ~/.local/bin/q
+cat ~/.local/bin/q2
+ls
+tar jxvf absorption.bz2 
+ls
+cd launcher_2017-06-08-18-32-21-513944
+ls
+cd ../
+ls
+tar jxvf kernel.bz2 
+ls
+cd launcher_2017-06-08-18-17-43-098708
+ls
+ll
+ls
+~ccm/opt/BerkeleyGW-1.2.0-hdf5/bin/wfn_rho_vxc_info.x ../launcher_2017-06-08-17-24-50-590804/ESPRESSO/wfn_co/wfn.cmplx | more
+module load hdf5-mpi/intel/sgimpt/1.8.15 
+~ccm/opt/BerkeleyGW-1.2.0-hdf5/bin/wfn_rho_vxc_info.x ../launcher_2017-06-08-17-24-50-590804/ESPRESSO/wfn_co/wfn.cmplx | more
+~ccm/opt/BerkeleyGW-1.2.0-hdf5/bin/wfn_rho_vxc_info.x ../launcher_2017-06-08-17-24-50-590804/ESPRESSO/wfn_fi/wfn.cmplx | more
+ls
+cd tmp
+ls
+cd KP_C06F08/
+ls
+cd block_2017-06-08-17-24-50-119112/
+ls
+cd launcher_2017-06-08-18-17-43-098708
+ls
+ll
+cd tmp/KP_C06F08/block_2017-06-08-17-24-50-119112/
+ls
+cd tmp/KP_C06F08/block_2017-06-08-17-24-50-119112/
+ls
+ll launcher_2017-06-08-18-03-59-660942
+ll launcher_2017-06-08-18-32-21-513944
+ll launcher_2017-06-08-18-17-43-098708
+ls
+ps aux | egrep dec014
+ps aux | egrep dec014
+ssh thunder02
+ssh thunder03
+ssh thunder04
+ssh thunder05
+ssh thunder06
+ssh thunder08
+ssh thunder09
+ssh thunder10
+ssh thunder11
+cd .repos/source_2016/MatData/WFlows/
+ls
+vi WFlowDbg2.py
+ls
+cd ~ccm/opt/cp2k
+ls
+cd src
+ls
+cd cp2k/
+ls
+la
+svn info
+cd ../../src-dec014/
+ls
+svn info
+module avail cp2k
+module show cp2k/gnu/trunk/mpt
+ls
+vi cp2k_regtests.js
+cp *js $WRK/cp2k_test.pbs
+cd $WRK
+ls
+vi cp2k_test.pbs 
+vi cp2k_test.pbs
+ls
+cp cp2k_test.pbs ~ccm/opt/cp2k/src-dec014/
+cd ~ccm/opt/cp2k/src-dec014/
+ls
+cat cp2k_test.pbs 
+vi cp2k_test.pbs
+cd ~/.repos/source_2016/MatData/
+ls
+cd WFlows/
+ls
+vi WFlowDbg2.py 
+vi WFlowDbgStruc.py 
+git status
+git commit -a -m "Modified WFlowDbgStruc.py to use my_launchpad.yaml file for logging into DB"
+git push
+ls
+rm *cif *yaml
+ls
+./WFlowDbgStruc.py 
+ls
+vi MoS2_dbg_wflow_20276915.yaml
+ls
+lpad add MoS2_dbg_wflow_20276915.yaml
+q
+./WFlowDbgStruc.py 
+ls
+./WFlowDbg2.py 
+ls
+vi absorbance_wflows.py
+./WFlowDbgStruc.py 
+vi absorbance_wflows.py
+ls
+git commit -a -m "Modified get_qe_vectors to fix bug when lattice type is not rhombohedral"
+git push
+./WFlowDbgStruc.py 
+ls
+./WFlowDbg2.py 
+ls
+diff SiC_dbg_wflow_20278030.yaml SiC_dbg_wflow_20278049.yaml
+ls
+vi WFlowDbg2.py 
+ls
+q
+cd /workspace/dec014/BGW/PROD/WFLOWDBG2
+ls
+echo fwdb_$(date %+s).log 
+echo fwdb_$(date +%s).log 
+nohup ./fwdb_launcher.sh 2>&1 > fwdb_$(date +%s).log & 
+ls
+tail -f fwdb_1535052965.log
+q
+lpad get_fws -s READY
+lpad get_fws -s READY -d count
+q
+module show cp2k
+ls
+cd
+ls
+cd $WRK
+ls
+cd BGW/PROD/
+ls
+cd WFLOWDBG2/
+ls
+cd block_2018-07-25-18-15-19-234901
+ls
+cd launcher_2018-08-09-20-07-26-439675
+ls
+cat FW_submit.script
+cat ~/.fireworks_qe_288dbg/my_qadapter.yaml
+cat /home/dec014/.repos/source_2016/fireworks/fireworks/user_objects/queue_adapters/PBS_qe_template.txt
+ls
+cd
+cd $WRK
+ls
+cd ~ccm/opt/cp2k/src-dec014/cp2k/
+ls
+q
+ls /app/ccm/opt/cp2k/src-dec014/cp2k/tests/QS/regtest-hfx/H2O-hfx-1.inp
+show_usage
+q
+cd
+ls
+cd .repos/source_2016/MatData/
+ls
+git pull
+git reset
+git status
+git reset --hard
+git pull
+ls
+vi user_rpt.py
+cd WFlows/
+ls
+vi WFlowDbg2.py
+cd ../
+ls
+git status
+git add user_rpt.py WFlows/WFlowDbg2.py
+git commit -m "Changed database logins to use my_launchpad.yaml for ssl_ca_certs and username/passwords"
+git push
+ls
+rm -rf *pdf
+ls
+cd WFlows/
+ls
+rm *cif *yaml
+ls
+./WFlowDbg
+./WFlowDbg2.py 
+git pull
+./WFlowDbg2.py 
+ls
+vi MoS2_dbg_wflow_20276456.yaml
+ipython
+cd tmp/KP_C06F08/block_2017-06-08-17-24-50-119112/
+ls
+cd launcher_2017-06-08-18-32-21-513944
+ls
+vi OUT.abs 
+show_queues
+ls *log
+ls
+ls ../launcher_2017-06-08-18-17-43-098708/
+ls ../launcher_2017-06-08-18-03-59-660942/
+ls
+vi OUT.abs 
+lpad get_fws
+cd
+cd .fireworks_talon/
+cd ../.fireworks
+ls
+vi my_launchpad.yaml
+cd
+cd $WRK
+lpad get_fws
+lpad get_fws -s RUNNING
+lpad --help
+lpad detect_lostruns --help
+lpad detect_lostruns --refresh
+lpad detect_lostruns --refresh --max_runtime "432000"
+lpad detect_lostruns --max_runtime "432000"
+lpad get_fws -s RESERVED
+lpad detect_lostruns --max_runtime "432000"
+lpad get_fws -i 142
+lpad detect_lostruns --max_runtime "432000" --rerun
+lpad detect_lostruns --max_runtime "432000"
+lpad get_fws -i 142
+lpad get_fws -s RESERVED
+lpad --help
+lpad detect_unreserved --help
+lpad detect_unreserved --time "423000" 
+lpad detect_unreserved --time "423000"  --rerun
+lpad detect_unreserved --time "172800"  --rerun
+lpad get_fws -s RESERVED
+lpad get_fws -s READY
+lpad get_fws -s RUNNING
+lpad detect_lostruns --max_runtime "259200"
+q
+cd BGW/PROD/
+ls
+cd WFLOWDBG2/
+ls
+tail fwdb_1533913123.log
+ls -lrt
+ps aux | egrep dec014
+head fwdb_1533913123.log
+ls
+ssh thunder01
+ps aux | egrep dec014
+cd /workspace/dec014/BGW/PROD/WFLOWDBG2
+ls
+ps aux | egrep dec014
+kill 34179
+ps aux | egrep dec014
+ls
+q
+lpad get_qid -i 225
+ls -d ~/.fireworks*
+cat ~/.fireworks/my_launchpad.yaml
+q
+ls
+vi fwdb_launcher.sh
+ls
+cat *.sh
+ls
+q
+nohup ./fwdb_launcher.sh 2>&1 > fwdb_`date %+s`.log &
+ls
+ps aux | egrep dec014
+q
+ls
+tail fwdb_.log
+ps aux | egrep dec014
+kill 43412
+ls
+date '%+s'
+date '+%s'
+nohup /workspace/dec014/BGW/PROD/WFLOWDBG2/fwdb_launcher.sh 2>&1 > fwdb_`date '+%s'`.log &
+ls
+mv fwdb_.log fwdb_1535136042.log
+ls -lrt
+tail fwdb_1535136086.log
+ls
+q
+show_usage
+lpad --help
+lpad get_fws --help
+lpad get_fws --qid 1811860
+lpad cancel_qid --qid 1811860 && lpad update_fws -u '{"_queueadapter.walltime": "3:00:00"}' -i 405 && qdel 1811860
+ls
+q
+lpad get_fws --qid 1811825
+lpad get_fws --qid 1811825 -d more
+lpad get_fws --qid 1811826 -d more
+cat ~/.fireworks_qe_144dbg/my_qadapter.yaml
+q
+lpad get_fws --qid 1811825
+q
+q
+lpad get_fws
+q
+cd /workspace/dec014/BGW/PROD/
+ls
+cd WFLOWDBG2/
+ls
+tail fwdb_1535110799.log
+ssh thunder01
+ls -lrt
+q
+lpad get_fws -s READY
+lpad get_fws -s RESERVED
+lpad --help
+lpad detect_unreserved --hel
+lpad detect_unreserved --help
+lpad detect_lostruns --help
+lpad detect_lostruns --refresh
+q
+ssh thunder01
+lpad get_fws -s RESERVED
+cd /p/work1/workspace/dec014/BGW/PROD/WFLOWDBG2/block_2018-07-25-18-15-19-234901/launcher_2018-08-09-02-07-52-322569
+ls
+tail OUT.eps 
+vi bgw.log 
+lpad rerun_fws --help
+lpad rerun_fws -pd --task-level -i 449 173 552 205 
+lpad rerun_fws -pd --task-level -i 552
+lpad rerun_fws -pd --task-level -i 449 173 205 
+lpad rerun_fws -pd -i 449 173 205 
+lpad rerun_fws -pd -i 552
+lpad get_qids -i 405
+lpad get_wflows -d more -i 405
+cd /p/work1/workspace/dec014/BGW/PROD/WFLOWDBG2/block_2018-07-25-18-15-19-234901/launcher_2018-08-09-20-06-23-365617
+;ls
+ls
+tail OUT.ker 
+vi bgw.log 
+lpad get_fws -i 405 -d more
+cat *script
+tail bgw.log 
+echo '8*3600' | bc
+echo '10000/3600' | bc
+echo '10000/3600.' | bc
+echo '10000/3600.0' | bc
+echo '10000.0/3600.0' | bc
+ls
+lpad get_qids -i 405
+lpad rerun_fws -pd -i 405
+lpad get_qids 399
+lpad get_qids -i 399
+lpad rerun_fws -pd -i 399
+lpad get_qids -i 183
+lpad cancel_reservation --help
+lpad --help
+lpad cancel_qid --help
+lpad cancel_qid --qid 1810651
+qdel 1810651
+lpad get_qids -i 225
+lpad cancel_qid --qid 1810641
+qdel 1810641
+lpad update_fws -u '{"_queueadapter.walltime": "3:00:00"}'
+lpad update_fws -u '{"_queueadapter.walltime": "3:00:00"}' -i 183
+lpad update_fws -u '{"_queueadapter.walltime": "3:00:00"}' -i 225
+lpad get_qids -i 195
+lpad rerun_fws -pd -i 195
+lpad get_qids -i 394
+lpad cancel_qid --qid 1810639
+qdel 1810639
+lpad update_fws -u '{"_queueadapter.walltime": "3:00:00"}' -i 394
+lpad get_quids -i 381
+lpad get_qids -i 381
+lpad update_fws -u '{"_queueadapter.walltime": "3:00:00"}' -i 381
+lpad rerun_fws -pd -i 381
+lpad update_fws -u '{"_queueadapter.walltime": "3:00:00"}' -i 381
+lpad get_qids -i 411
+lpad rerun_fws -pd -i 411
+lpad update_fws -u '{"_queueadapter.walltime": "3:00:00"}' -i 411
+lpad get_qids -i 417
+lpad rerun_fws -pd -i 417
+lpad update_fws -u '{"_queueadapter.walltime": "3:00:00"}' -i 417
+lpad get_qids -i 147
+lpad cancel_qid --qid 1810633 && qdel 1810633
+lpad update_fws -u '{"_queueadapter.walltime": "3:00:00"}' -i 147
+lpad get_qids -i 459
+lpad cancel_qid --qid 1810631 && qdel 1810631
+lpad update_fws -u '{"_queueadapter.walltime": "3:00:00"}' -i 459
+lpad get_qids -i 435
+lpad rerun_fws -pd -i 435
+lpad update_fws -u '{"_queueadapter.walltime": "3:00:00"}' -i 435
+lpad get_qids -i 351
+lpad rerun_fws -pd -i 351
+lpad update_fws -u '{"_queueadapter.walltime": "3:00:00"}' -i 351
+lpad get_qids -i 267
+lpad rerun_fws -pd -i 267
+lpad update_fws -u '{"_queueadapter.walltime": "3:00:00"}' -i 267
+lpad get_qids -i 159
+lpad rerun_fws -pd -i 159
+lpad update_fws -u '{"_queueadapter.walltime": "3:00:00"}' -i 159
+q
+cd /p/work1/workspace/dec014/BGW/PROD/WFLOWDBG2/block_2018-07-25-18-15-19-234901/launcher_2018-08-09-01-20-35-445539
+ls
+vi bgw.log 
+echo '27145.977347/3600' | bc
+cd /p/work1/workspace/dec014/BGW/PROD/WFLOWDBG2/block_2018-07-25-18-15-19-234901/launcher_2018-08-09-02-07-52-322569
+vi bgw.log 
+ls
+q
+cat *script
+lpad get_fws -d all -i 449
+lpad cancel_qid --qid 1811826 && lpad update_fws -i 449 '{"_tasks.1.mpi_cmd" : "mpiexec_mpt -n 288", "_queueadapter.nnodes": 8, "_queueadapter.walltime" : "5:00:00"}' && qdel 1811826
+lpad cancel_qid --qid 1811826 && lpad update_fws -i 449 -u '{"_tasks.1.mpi_cmd" : "mpiexec_mpt -n 288", "_queueadapter.nnodes": 8, "_queueadapter.walltime" : "5:00:00"}' && qdel 1811895
+lpad cancel_qid --qid 1811895 && lpad update_fws -i 449 -u '{"_tasks.1.mpi_cmd" : "mpiexec_mpt -n 288", "_queueadapter.nnodes": 8, "_queueadapter.walltime" : "5:00:00"}' && qdel 1811825
+lpad get_fws -d all -i 449
+lpad cancel_qid --qid 1811825 && lpad update_fws -i 173 -u '{"_tasks.1.mpi_cmd" : "mpiexec_mpt -n 288", "_queueadapter.nnodes": 8, "_queueadapter.walltime" : "5:00:00"}' && qdel 1811825
+lpad get_quids
+lpad --help
+lpad get_qids
+q
+lpad get_wflows -d more -i 449
+lpad get_fws -s RESERVED
+lpad get_fws -d all -i 550
+lpad update_fws -u '{"_queueadapter.walltime": "3:00:00"}' -i 550
+lpad get_fws -d more -i 550
+cd .repos/source_2016/pymatgen/pymatgen/io/bgw/
+ls
+vi handlers.py

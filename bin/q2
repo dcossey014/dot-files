@@ -1,0 +1,18 @@
+#!/bin/bash
+
+nargs=$#
+time=15
+
+#echo Nargs: $nargs
+if [ $nargs -gt 1 ]; then
+    echo "Too many Arguements"
+    exit
+fi
+
+if [ $1 ]; then
+    time=$1
+else
+    time=2
+fi
+
+watch -n $time q

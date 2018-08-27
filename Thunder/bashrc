@@ -1,0 +1,26 @@
+#
+# Please do not make any changes in this file. If you want to customize
+# your bash environment, make all personal modifications in a file
+# named "$HOME/.personal.bashrc". This file is "sourced" after executing
+# the global.bashrc startup script.
+#
+
+STARTUP=/app
+
+file=$STARTUP/.bashrc
+
+if test -r $file ; then
+  . $file
+fi
+
+#Source global definitions
+if [ -f /etc/bashrc ]; then
+    source /etc/bashrc
+fi
+
+#Source global definitions
+personal=/${HOME}/.personal.bashrc
+if [ -f $personal ]; then
+    source $personal
+fi
+

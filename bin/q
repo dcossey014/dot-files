@@ -1,0 +1,22 @@
+#!/bin/ksh
+
+`qstat -u ${USER} > ${HOME}/.local/queue.txt`
+rstd_num=`grep standard ${HOME}/.local/queue.txt | grep -c " R "`
+qstd_num=`grep standard ${HOME}/.local/queue.txt | grep -c " Q "`
+hstd_num=`grep standard ${HOME}/.local/queue.txt | grep -c " H "`
+rdb_num=`grep debug ${HOME}/.local/queue.txt | grep -c " R "`
+qdb_num=`grep debug ${HOME}/.local/queue.txt | grep -c " Q "`
+hdb_num=`grep debug ${HOME}/.local/queue.txt | grep -c " H "`
+rhi_num=`grep high ${HOME}/.local/queue.txt | grep -c " R "`
+qhi_num=`grep high ${HOME}/.local/queue.txt | grep -c " Q "`
+hhi_num=`grep high ${HOME}/.local/queue.txt | grep -c " H "`
+rgpu_num=`grep GPU ${HOME}/.local/queue.txt | grep -c " R "`
+qgpu_num=`grep GPU ${HOME}/.local/queue.txt | grep -c " Q "`
+hgpu_num=`grep GPU ${HOME}/.local/queue.txt | grep -c " H "`
+
+cat ${HOME}/.local/queue.txt
+printf "\nDebug Jobs:\t%3d Running\t%3d Queued\t%3d Held\n" $rdb_num $qdb_num $hdb_num
+printf "High Jobs:\t%3d Running\t%3d Queued\t%3d Held\n" $rhi_num $qhi_num $hhi_num
+printf "Std Jobs:\t%3d Running\t%3d Queued\t%3d Held\n" ${rstd_num} $qstd_num $hstd_num
+printf "GPU Jobs:\t%3d Running\t%3d Queued\t%3d Held\n\n" ${rgpu_num} $qgpu_num $hgpu_num
+rm ${HOME}/.local/queue.txt

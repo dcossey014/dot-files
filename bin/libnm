@@ -1,0 +1,3 @@
+#!/bin/bash
+
+for i in *.a; do echo $i; nm --defined-only $i | egrep --color $1; done

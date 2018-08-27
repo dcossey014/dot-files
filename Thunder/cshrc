@@ -1,0 +1,13 @@
+#
+# Please do not make any changes in this file. If you want to customize
+# your csh environment, make all personal modifications in a file
+# named "$HOME/.personal.cshrc". This file is "sourced" after executing
+# the global .cshrc startup script.
+#
+
+set STARTUP = /app
+set file = $STARTUP/.cshrc
+
+if (-e $file) then
+  source $file
+endif

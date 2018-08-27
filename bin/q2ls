@@ -1,0 +1,22 @@
+#!/bin/bash
+
+nargs=$#
+time=15
+
+#echo Nargs: $nargs
+if [ $nargs -gt 1 ]; then
+    echo "Too many Arguements"
+    exit
+fi
+
+if [ $1 ]; then
+    time=$1
+fi
+
+for i in `seq 1000`:
+do
+	q
+	echo Iteration $i
+    ls
+ 	sleep ${time}
+done

@@ -1,0 +1,14 @@
+#
+# Please do not make any changes in this file. If you want to customize
+# your csh environment, make all personal modifications in a file
+# named "$HOME/.personal.login". This file is "sourced" after executing
+# the global.login startup script.
+#
+
+set STARTUP = /app
+set file = $STARTUP/.login
+
+if (-e $file) then
+  source $file
+endif
+

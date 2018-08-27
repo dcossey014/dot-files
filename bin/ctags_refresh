@@ -1,0 +1,5 @@
+#!/bin/bash
+
+ctags -R -o ~/.vim/mytags_201605 ~/.repos/source_2016
+
+find /app/ccm/opt/python/gnu/2.7.10/lib/python2.7 -iname "*.py" -exec ctags -a -o ~/.vim/mytags_201605 {} \;

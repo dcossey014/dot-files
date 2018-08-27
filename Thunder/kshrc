@@ -1,0 +1,15 @@
+#
+# Please do not make any changes in this file. If you want to customize
+# your ksh environment, make all personal modifications in a file
+# named "$HOME/.personal.kshrc". This file is "sourced" after executing
+# the global.kshrc startup script.
+#
+
+STARTUP=/app
+
+file=$STARTUP/.kshrc
+
+if test -r $file ; then
+  . $file
+fi
+

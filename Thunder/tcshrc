@@ -1,0 +1,13 @@
+#
+# Please do not make any changes in this file. If you want to customize
+# your tcsh environment, make all personal modifications in a file
+# named "$HOME/.personal.tcshrc". This file is "sourced" after executing
+# the global.tcshrc startup script.
+#
+
+set STARTUP = /app
+set file = $STARTUP/.tcshrc
+
+if (-e $file) then
+  source $file
+endif
