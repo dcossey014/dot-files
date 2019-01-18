@@ -1,0 +1,51 @@
+####################################################################
+#################       Linux  Bindings      #######################
+####################################################################
+
+# Keybindings Linux
+"\e[1~": beginning-of-line       # Home key
+"\e[4~": end-of-line             # End key
+"\e[5~": history-search-backward # Page Up
+"\e[6~": history-search-forward  # Page Down
+"\e[3~": delete-char             # Delete key
+"\e[5C": forward-word            # Ctrl+right
+"\e[5D": backward-word           # Ctrl+left
+
+
+
+####################################################################
+#################       MacOS  Bindings      #######################
+####################################################################
+
+# Use Vi, not Emacs, style editing
+#set editing-mode vi
+
+# Show all completions as soon as I press tab, even if there's more than one
+#set show-all-if-ambiguous on
+
+####################################################################
+# Keymaps for when I'm in command mode (e.g., after hitting Esc)
+#set keymap vi-command
+
+# Insert the Arguments from the last command
+#"p": "i !!*\r"
+
+####################################################################
+# Keymaps for when I'm in insert mode (i.e., typing stuff in)
+#set keymap vi-insert
+
+# Needed because binding 'p' in command mode above wipes its insert mode
+# function, too.  This fixes that, and will insert 'p' when you type 'p'.
+#"p": self-insert
+
+# Keybindings Mac
+#"\033[H": beginning-of-line	 # Home Key in Terminal.app
+#"\033[F": end-of-line            # End key
+#"\033a": history-search-backward # Option+Up Key in Terminal.app
+#"\033b": history-search-backward # Option+Down Key in Terminal.app
+#"\033c": forward-word		 # Option+Right
+#"\033d": backward-word		 # Option+Left
+#"\e[5~": history-search-backward # Page Up
+#"\e[6~": history-search-forward  # Page Down
+#"\e[3~": delete-char             # Delete key
+
