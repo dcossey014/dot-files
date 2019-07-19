@@ -22,7 +22,7 @@ Open Terminal, then run the following commands one at a time:
 hdiutil attach /Applications/Install\ macOS\ High\ Sierra.app/Contents/SharedSupport/InstallESD.dmg -noverify -nobrowse -mountpoint /Volumes/install_app
 hdiutil create -o /tmp/HighSierra.cdr -size 7316m -layout SPUD -fs HFS+J
 hdiutil attach /tmp/HighSierra.cdr.dmg -noverify -nobrowse -mountpoint /Volumes/install_build
-asr restore -source /Volumes/install_app/BaseSystem.dmg -target /Volumes/install_build -noprompt -noverify -erase
+asr restore -source /Applications/Install\ macOS\ High\ Sierra.app/Contents/SharedSupport/BaseSystem.dmg -target /Volumes/install_build -noprompt -noverify -erase
 rm /Volumes/OS\ X\ Base\ System/System/Installation/Packages
 cp -rp /Volumes/install_app/Packages /Volumes/OS\ X\ Base\ System/System/Installation/
 hdiutil detach /Volumes/OS\ X\ Base\ System/
